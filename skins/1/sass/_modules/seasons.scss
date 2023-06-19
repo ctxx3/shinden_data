@@ -1,0 +1,270 @@
+@import '../_mixins/clearfix';
+.seasons {
+    nav {
+        ul {
+            width: 100%;
+            @media (max-width:600px){
+                padding-left:5px;
+            }
+        }
+        input.year {
+            width: 5ex;
+        }
+        li.right {
+            float: right;
+            @media (max-width:800px){
+                float:none;
+            }
+        }
+        li.left-space {
+            margin-left: 1rem;
+        }
+    }// end nav
+
+    .filters {
+        margin-top: 1ex;
+    }
+    .tabs-container {
+        border: 1px solid $title-searchform-border-color;
+        border-top: 0 none transparent;
+    }
+    .tab-item {
+        padding: 2ex;
+        h3 {
+            margin-top: 0;
+            @include clearfix();
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            li {
+                $cols: 4;
+                width: (100% / 2 / $cols);
+                &.dbl-w {
+                    width: (100% /$cols);
+                    @media (max-width:550px){
+                        width:100%;
+                    }
+                }
+                @media (max-width:800px){
+                    width:25%;
+                }
+                @media (max-width:550px){
+                    width:50%;
+                }
+                @media (max-width:350px){
+                    width:100%;
+                }
+            }
+        }
+    }
+    .filter-items-tabs {
+        margin: 0;
+    }
+    .hidden-template {
+        display: none;
+    }
+
+    $tag-height: 1.5em;
+    ul.genres {
+        overflow: hidden;
+        height: $tag-height;
+        li a {
+            font-size: 0.7rem;
+        }
+    }
+    .tag-spacer {
+        height: $tag-height;
+    }
+    .stats {
+        //float: left;
+        font-size: 18px;
+        @include clearfix();
+        margin-left: 35px;
+        width: 320px;
+    }
+    article {
+        @include clearfix();
+    }
+}
+// archiwum sezonów
+.seasons-archive {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        clear: both;
+        li {
+            display: block;
+            float: left;
+            width: 25%;
+        }
+    }
+}
+
+//missing titles
+ul.missing-titles {
+    li.title {
+        width: ((100% / 2) - 2%);
+    }
+    .stats {
+        font-size: 18px;
+        margin-left: 55px;
+        @include clearfix();
+    }
+    $tag-height: 1.5em;
+    ul.genres {
+        overflow: hidden;
+        height: $tag-height;
+        li a {
+            font-size: 0.7rem;
+        }
+    }
+    .tag-spacer {
+        height: $tag-height;
+    }
+}
+
+//lista sezonów
+.season {
+    li.title {
+        width: ((100% / 3) - 2%);
+        @media (max-width:950px){
+            width:48%;
+        }
+    }
+}
+
+.title-box-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    $box-height: 220px;
+    li.title {
+        display: block;
+
+        margin: 1%;
+        float: left;
+        head, section, footer {
+            margin: 3px;
+        }
+        @media (max-width:650px){
+            width:80%;
+            float:none;
+            margin:0 auto;
+        }
+        @media (max-width:400px){
+            width:90%;
+        }
+    }
+
+
+    .wathed-stats {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        li {
+            display: inline;
+        }
+        i {
+            margin-right: -4px;
+        }
+    }
+
+    .media-title-cover {
+        width: 145px;
+        height: $box-height;
+        @media (max-width:400px){
+            width: 105px;
+            height: 150px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-end;
+        float: left;
+        margin-right:3px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .title-desc {
+        height: $box-height;
+        @media (max-width:400px) {
+            height:150px;
+        }
+    }
+    h3 {
+        position: relative;
+        height: 3em;
+        width: 100%;
+        text-align: center;
+        font-size: 0.9rem;
+        > a {
+            margin-left: 1.2em;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: block;
+            text-align: center;
+            max-height: 3em;
+            overflow: hidden;
+        }
+        > figure {
+            position: absolute;
+            top: 1.3ex;
+            left: 1px;
+            cursor: pointer;
+            > figcaption {
+                display: none;
+            }
+        }
+        .action-tip {
+            position: absolute;
+        }
+    }
+    .action-tip {
+        background-color: $tagsDefaultColor;
+        z-index: 3;
+        left: 0;
+        right: 0;
+        top: 2em;
+        figure {
+            min-width: 85px;
+        }
+        figcaption {
+            font-size: 8px;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        a {
+            margin: 3px;
+        }
+    }
+    footer {
+        $space-size: 0.3em;
+        text-align: center;
+        font-size: small;
+        .finish {
+            display: none;
+        }
+        .kind {
+            margin-right: $space-size;
+        }
+        .eps {
+            margin: 0 $space-size;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+///* recommendation module */
+
+@import '../_mixins/border-radius';
+@import '../_mixins/box-shadow';
+@import '../_mixins/transition';
+
+$size-recommendation-circle: 130px;
+
+.recomm {
+	position: relative;
+}
+
+.recomm-circle {
+	width: $size-recommendation-circle;
+	height: $size-recommendation-circle;
+	float:left;
+	margin:10px;
+	overflow: hidden;
+	@include border-radius(50%);
+	@include box-shadow(0,3px,8px,rgba(0, 0, 0, .25));
+	@include transition(all, 0.2s, ease);
+        @media (max-width:500px) {
+            float:none;
+            
+        }
+	> img {
+		width: $size-recommendation-circle;
+	}
+
+}
+
+.recomm-item-title {
+	position: absolute;
+	top: 10px;
+	width: 70%;
+	left: $size-recommendation-circle+10px;
+	float:left;
+	color: $color-brand;
+	.recomm-info {
+		padding: 8px 15px;
+		color: $color-brand-shade-dark;
+	}
+}
+
+.recomm-right {
+	float: right;
+	margin-top: 121px;
+	text-align: right;
+        top: 75px;
+        @media (max-width:500px) {
+            margin-top:20px;
+            top:135px;
+        }
+}
+
+.recomm-item-title.recomm-right {
+	left: auto;
+	right: $size-recommendation-circle+10px;
+}
+
+.recomm-divider {
+	position: absolute;
+	top: 82px;
+	left: 49%;
+}
+
+.recomm-author {
+	float:left;
+	width:100%;
+	display: inline-block;
+	text-align: center;
+}
+
+ 
+
+///* effects */
+.recomm-circle-zoom {
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+///* recommendation states */
+
+
+///* effects */
+///*TILT*/
+.recomm-circle-tilt:hover {
+  -webkit-transform: rotate(-5deg);
+     -moz-transform: rotate(-5deg);
+       -o-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.recomm-circle-zoom:hover {
+	border: 2px solid $color-background;
+};

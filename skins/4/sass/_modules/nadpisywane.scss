@@ -1,0 +1,24 @@
+/*wymuszenie kolorow tekstow opisow i recek*/
+.data-view-table-full span{
+    color: #eceaec !important;
+}
+.box-art-text{
+    color: #eceaec !important;
+}
+/*kolor pod komentami fb*/
+.fb-comments{
+background-color: #b6b6b6;
+}
+
+.info {
+    background-color: #3b8eb5;
+    border-color: #4ea5cd;
+}
+
+.error {
+    background-color: #c43d3d;
+    border-color: #de4343;
+    a {
+        color: silver;
+    }
+}

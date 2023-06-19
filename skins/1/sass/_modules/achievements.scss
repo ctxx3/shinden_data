@@ -1,0 +1,359 @@
+$color_star_dust_approx: #9d9d9d;
+$color_wedgewood_approx: #5081a9;
+
+.achv{
+    .anty{
+        background-color: rgba(red, 0.4);
+        .achv-level{
+            font-weight: bold;
+            color:red;
+        }
+        .bar span{
+            background-color: red;
+        }
+        .anty{
+            background-color:transparent;
+        }
+    }
+
+    .warn{
+        background-color: rgba(orange, 0.4);
+        .achv-level{
+            font-weight: bold;
+            color:orange;
+        }
+        .warn{
+            background-color:transparent;
+        }
+        .bar span{
+            background-color: orange;
+        }
+    }
+  .achv-img{
+    width: 160px;
+    height: 80px;
+    margin:3px;
+  }
+  .section-title em{
+    color: $color_star_dust_approx;
+    font-size: x-small;
+    margin-left: 7px;
+    font-weight: normal;
+    position: relative;
+    top: -4px;
+    span{
+      font-weight:bolder;
+    }
+  }
+  .media-figure-icon{
+      float: right;
+      margin:-19px 18px 0 0;
+      .text-danger{
+          color:red;
+      }
+  }
+    h2{
+        em{
+            float: right;
+        }
+        small{
+            color:red;
+        }
+    }
+}
+
+.achv-entry{
+  padding:7px;
+  &.prev{
+    overflow:hidden;
+    display:none;
+    background-color:rgba($font-base-color, .1);
+  }
+  .achv-img{
+    float:right;
+    cursor:pointer;
+    @media (max-width:450px) {
+        float:none;
+        margin:2px auto;
+        display:block;
+    }
+  }
+  h3{
+    overflow: hidden;
+    position: relative;
+    .achv-level{
+      font-size:x-small;
+      color: $color_star_dust_approx;
+      float:right;
+      line-height:10px;
+      font-weight:normal;
+      margin:0;
+      margin-right:2px;
+          text-align:right;
+      span{
+          display:block;
+          font-size:8px;
+        }
+    }
+    .bar{
+      display:block;
+      border-radius:3px;
+      border:1px solid $color_star_dust_approx;
+      span{
+        display:block;
+        height:4px;
+        background-color: $color_wedgewood_approx;
+        border-radius:2px;
+      }
+    }
+  }
+  .desc{
+    margin-bottom: 0;
+    @include clearfix;
+  }
+  .entries-wrapper{
+    display:none;
+    overflow:hidden;
+      .close{
+        float:right;
+        cursor:pointer;
+    }
+  }
+
+
+  aside {
+    float:left;
+    width:95px;
+    text-align:center;
+    &.sum {
+      position: relative;
+      .weight {
+        border-top: 3px solid $color-brand-dark;
+      }
+      .op {
+        position: absolute;
+        top: -4rem;
+        font-size:3rem;
+      }
+      .weight {
+        font-size:3rem;
+        padding-bottom:1rem;
+      }
+    }
+  }
+  &.earned {
+    background-color: rgba($progressbar-color, 0.3);
+  }
+  &.earned, &.possible:hover {
+    aside {
+      line-height: 1;
+      .weight {
+        font-size:3rem;
+        padding-bottom:1rem;
+      }
+    }
+  }
+  &.possible:not(:hover) {
+    border-bottom: 1px solid rgba($progressbar-color, 0.3);
+    .achv-img, .bar, .desc, aside div:not(.weight) {
+      display: none;
+    }
+    h3 {
+      margin:0; padding:0;
+      font-size:x-small;
+      color: $color_star_dust_approx;
+      .achv-level {
+        color: $font-base-color;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.achv-media{
+  margin-top:20px;
+  &:first-of-type{
+      margin-top:0;
+  }
+}
+.full-achv-entry{
+  margin-top:12px;
+  &:first-child{
+      margin-top:3px;
+  }
+  li{
+      margin:4px;
+      padding: 3px;
+  }
+  h4{
+    cursor:pointer;
+    i{
+      float:right;
+      margin-right:17%
+    }
+  }
+
+
+  .achv-img{
+    float:left;
+    margin-right:7px;
+  }
+  ul{
+    padding:0;
+    margin: 10px 15%;
+    display:none;
+    list-style:none;
+    strong{
+      display:block;
+      position:relative;
+      i{
+        font-size: small;
+        color: $color_star_dust_approx;
+        position:absolute;
+        right:5%;
+        font-weight:normal;
+      }
+    }
+    span{
+      @include clearfix;
+    }
+  }
+
+}
+.nav-list.achievements{
+    width:100%;
+    .right{
+        float:right;
+    }
+}
+
+.waifu-packet {
+  .summary {
+    span{
+      display: inline-block;
+      min-height: 3em;
+      padding-top: 7px;
+      font-size: large;
+    }
+    .ico {
+      display: block;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: bold;
+      color: $input-ro-color;
+      .fa-check-circle {
+        color: $progressbar-color;
+      }
+    }
+  }
+  .form {
+    input[type=radio] {
+      float: left;
+      position:relative;
+      top:1em;
+    }
+
+    .disabled-field + label {
+      cursor: not-allowed;
+    }
+    .disabled-field {
+      visibility: hidden;
+    }
+    label {
+      background-color: $color-l-container-secondary;
+      display:block;
+      margin-left:1.5em;
+      padding:0.5em;
+      border-radius:0.4em;
+      margin-bottom: 7px;
+      h3 {
+        margin-top:0;
+      }
+    }
+    input[type=radio]:checked + label {
+      background-color: $media-row-active-bg-color;
+    }
+    .submit-row {
+      text-align: center;
+      background-color: $color-brand-second;
+      padding:.5rem;
+      button {
+        padding: 0.5em;
+      }
+    }
+  }
+  .achv {
+    h2.big {
+      margin-top: 3em;
+      font-size: 1.75rem;;
+    }
+  }
+
+  .modal-layer {
+    //display: block;
+    .modal-body {
+      max-height: 90vh;
+      height: 338px;
+      width: 700px;
+      max-width: 90vw;
+      overflow: auto;
+      h2 {
+        margin-top:0;
+        position:relative;
+        margin: -10px;
+        background-color: $color-background-3;
+        padding:7px;
+        margin-bottom:10px;
+      }
+      .modal-close:before {
+        top:7px;
+        right: 7px;
+      }
+      figure {
+        margin:7px;
+        display: inline-block;
+        float: none;
+        width: 133px;
+        height:271px;
+        overflow: hidden;
+        img {
+          max-width: 133px;
+        }
+      }
+      figcaption {
+        font-feature-settings: normal;
+        font-variant: normal;
+        font-weight: normal;
+        height: 6em;
+        overflow: hidden;
+        span {
+          display: block;
+        }
+
+      }
+      #waifu-container {
+        margin-top:20px;
+        left:0;
+        right: 0;
+        text-align: center;
+      }
+      .in-progress {
+        pre {
+          display: inline-block;
+          height:75px;
+          width:98%;
+          margin:0;
+        }
+      }
+    }
+  }
+}
+.vertical-container {
+  position: relative;
+  .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+.unread-news, .unread-news .newTitle span {
+    background-color: $color-background-3;
+
+}
+.news-list-item {
+    padding-bottom: 7px;
+}
+
+.unread-news .newTitle::before {
+    display: inline-block;
+    content: '';
+    background: rgba(white, .3) url(https://forum.shinden.pl/pasek_ico/notification-bell.svg) no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    margin-top: -11px;
+
+}
+
+.set-all-news-as-read {
+    cursor: pointer;
+    display: none;
+}
+.news-content, .profile {
+    iframe, img {
+        max-width: 100%;
+    }
+}

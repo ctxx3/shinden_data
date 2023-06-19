@@ -1,0 +1,240 @@
+///* extensions for data-view */
+@mixin section-table($min-width, $class-name) {
+    @media (min-width: ($min-width + 1)) {
+        section.#{$class-name} {
+            display: table;
+            border-collapse: collapse;
+            header {
+                display: table-header-group;
+            }
+            footer {
+                display: table-footer-group;
+            }
+            article {
+                display: table-row-group;
+            }
+            & > header, & > footer, & > article {
+                & > ul {
+                    display: table-row;
+                    & > li {
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//na kompie div jako tabela
+@include section-table(600px, 'title-table');
+
+.title-table {
+    i.fa-plus {
+        opacity: 0.4;
+        transition: opacity .4s ease;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    margin: 5px;
+    width: calc(100% - 10px);
+    ul.div-row {
+        & > li {
+            padding: 2px;
+            text-align: center;
+            @media (min-width: 601px) {
+                border-bottom: 1px solid $color-background-3;
+            }
+        }
+    }
+
+
+    .cover-col {
+        width: 50px;
+        a {
+            display: block;
+            width: 47px;
+            height: 73px;
+            background-size: cover;
+            border: 2px solid $color-brand-shade-dark;
+            text-decoration: none;
+            background-position: 50% 50%;
+        }
+    }
+
+    .desc-col {
+        padding: 0 5px 5px 5px;
+        text-align: left !important;
+        h3 {
+            margin-top: 0;
+            figcaption {
+                display: none;
+            }
+        }
+    }
+    .type-col {
+        width: 40px;
+    }
+    .multimedia-col {
+        width: 57px;
+    }
+    .rate-col {
+        width: 86px;
+    }
+    .rating {
+        text-align:right;
+        line-height: 12px;
+        em{
+            font-size:x-small;
+        }
+    }
+
+    .rate-top{
+        font-size: X-LARGE;
+        font-weight: bold;
+    }
+
+    .highlight-row {
+        display: none;
+    }
+
+    @media (max-width: 600px) {
+
+        header {
+            display: none;
+        }
+        $cover-col-width: 76px;
+        ul.div-row {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            margin-bottom: 2px;
+            padding:0;
+            padding-bottom: 2px;
+            border-bottom: 1px solid $color-background-3;
+            @include clearfix();
+            & > li {
+                display: block;
+                margin:0;
+                padding:2px;
+                //width: calc(100% - (#{$cover-col-width} + 4px));
+                //margin-left: $cover-col-width + 4px;
+            }
+        }
+        ul.div-row > li.cover-col {
+            width:$cover-col-width;
+            margin-left:0;
+            float:left;
+            a {
+                width: ($cover-col-width - 8px);
+                height:100px;
+            }
+        }
+
+        .tags::before, .tags::after {
+            display: none;
+            clear: none;
+        }
+        .desc-col {
+            height:54px;
+            h3 {
+                margin-bottom: 1px;
+                width: clac(100% -1px);
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                color: $color-brand;
+            }
+        }
+        .tags {
+            display: block;
+            font-size: small;
+            width:clac(100% -1px);
+            overflow-y:hidden;
+            overflow-x: auto;
+            margin-right:70px !important;
+            white-space: nowrap;
+            li {
+                display: inline-block;
+                a {
+                    float: none;
+                    display: inline-block;
+                    margin-right: 1px;
+                }
+            }
+        }
+        .rate-top {
+            position: absolute;
+            top: 61px;
+            left: $cover-col-width + 14px;
+            margin-left:0 !important;
+            line-height: normal;
+
+            &::before {
+                content: attr(title);
+                display: block;
+                font-size: 12px;
+                font-weight: normal;
+            }
+        }
+        ul.div-row > li {
+            &.ranking-col {
+                position: absolute;
+                display: inline-block;
+                top: 76px;
+                left: 74px + $cover-col-width + 4px;
+                font-size: X-LARGE;
+                font-weight: bold;
+                line-height: normal;
+                &::before {
+                    content: attr(title)  ': ';
+                    display: inline-block;
+                    margin-right: 1ex;
+                    font-size: 12px;
+                    font-weight: normal;
+                    margin-bottom: 2px;
+                }
+            }
+            &.ratings-col {
+                float:right;
+                margin-top: -30px;
+            }
+            &.title-kind-col {
+                margin-left:74px;
+                display: inline-block;
+            }
+            &.episodes-col {
+                display:inline-block;
+                &::after{
+                    display:inline-block;
+                    content: ' ep';
+                }
+            }
+            &.chapters-col {
+                display:inline-block;
+            }
+            &.title-status-col {
+                margin-left:74px + $cover-col-width + 4px;
+                text-align: left;
+                display: block;
+
+            }
+        }
+        div.rating span {
+            display: inline-block;
+            min-width: 4ex;
+            text-align: left;
+        }
+    }
+    @media (max-width: 370px) {
+        .ratings-col {
+            display: none !important;
+        }
+        .tags {
+
+            margin-right:0px !important;
+        }
+    }
+}

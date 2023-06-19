@@ -1,0 +1,77 @@
+///* Modules are the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on. */
+//common structural
+
+@import "_modules/title-elements";
+
+@import '_modules/box';
+@import '_modules/media';
+@import '_modules/data-view';
+@import '_modules/tabs';
+@import '_modules/messages';
+
+//popular
+@import '_modules/form';
+@import '_modules/button';
+@import '_modules/bubble';
+@import '_modules/pagination';
+@import '_modules/tags';
+@import '_modules/progressbar';
+@import '_modules/figure';
+
+//common used
+@import '_modules/navigation';
+@import '_modules/ads';
+@import '_modules/logo';
+@import '_modules/icon';
+@import '_modules/footer';
+
+//decorations
+@import '_modules/slider';
+@import '_modules/carousel';
+@import '_modules/fb';
+
+
+//pages
+@import '_modules/recommendation';
+@import '_modules/info-aside';
+@import '_modules/info-top';
+@import '_modules/player';
+@import '_modules/person';
+@import '_modules/search-section';
+@import '_modules/patterns';
+@import '_modules/timeline';
+
+@import '_modules/shop';
+@import '_modules/relation';
+@import '_modules/reviews';
+
+@import '_modules/to-watch';
+@import '_modules/sortable';
+@import "_modules/waifu";
+
+@import '_modules/embed';
+
+
+
+@import '_modules/pasek_strona';
+@import '_modules/achievements';
+@import '_modules/userprofile';
+@import '_modules/userlist';
+
+
+@import '_modules/posts';
+
+@import '_modules/user-stats';
+
+@import '_modules/rate';
+@import '_modules/pools';
+
+@import "_modules/seasons";
+
+@import "_modules/home-page";
+
+@import "_modules/modals";
+
+@import "_modules/title-list";
+@import "_modules/episode-list";
+@import "_modules/news";

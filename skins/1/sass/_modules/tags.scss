@@ -1,0 +1,108 @@
+///* tags module */
+
+@import '../_mixins/clearfix';
+
+
+.tags {
+    list-style: none;
+    @include clearfix();
+    margin: 0;
+    padding: 0;
+    li a{
+        padding: 1px 4px;
+        margin-right: 5px;
+        float:left;
+        border: 1px solid $color-background-3;
+        @include border-radius(6px);
+        background-color: $tagsDefaultColor;
+    }
+    li:hover a{
+        border: 1px solid $color-brand;
+        color: $color-brand;
+        text-decoration: none;
+    }
+}
+
+.tags-cloud {
+    text-align: center;
+    li {
+        display: inline-block;
+    }
+}
+
+
+.tags-numbered {
+    list-style: none;
+    @include clearfix();
+    li {
+        padding: 0;
+        margin-right: 10px;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+}
+.inline-tags-numbered {
+    list-style: none;
+    margin: 0;
+    padding:0;
+    li {
+        padding: 0;
+        margin-right: 10px;
+        float: left;
+    }
+}
+.tags-numbered, .inline-tags-numbered{
+    a {
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 20px;
+        padding: 0 0 0 5px;
+        line-height: 17px;
+        font-size: 12px;
+        color: #555;
+        text-decoration: none;
+        text-shadow: 0 1px white;
+        background: #fafafa;
+        border-width: 1px 0 1px 1px;
+        border-style: solid;
+        border-color: #dadada #d2d2d2 #c5c5c5;
+        border-radius: 3px 0 0 3px;
+        background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+    span {
+        position: relative;
+        margin: 0 0 0 5px;
+        display: inline-block;
+        right: -1px;
+        top:-1px;
+        height: 18px;
+        padding: 0 7px 0 6px;
+        color: white;
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+        background: #eb6b22;
+        border: 1px solid;
+        border-color: #d15813 #c85412 #bf5011;
+        border-radius: 0 2px 2px 0;
+        opacity: .95;
+        background-image: linear-gradient(to bottom, #ed7b39, #df5e14);
+        transition: 0.3s ease-out;
+        transition-property: padding, max-width;
+        &:before {
+              content: '';
+              z-index: 2;
+              position: absolute;
+              top: 5px;
+              left: -3px;
+              width: 5px;
+              height: 6px;
+              opacity: .95;
+              background: $tagsDefaultColor;
+              border-radius: 3px 0 0 3px;
+
+        }
+    }
+}

@@ -1,0 +1,61 @@
+
+@import '../_mixins/border-radius';
+@import '../_mixins/box-shadow';
+@import '../_mixins/vertical-align';
+@import '../_mixins/linear-gradient';
+@import '../_mixins/transition';
+@import '../_mixins/box-shadow';
+@import '../_mixins/clearfix';
+@import '../_mixins/box-sizing';
+
+.progressbar {
+	margin: 0 3px;
+    height: 8px;
+    background: $progressbar-bg-color;
+    border: none;
+    border-radius: 7px;
+    padding: 3px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .15);
+}
+
+.progressbar-value {
+    height: 6px;
+    background: $progressbar-color;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset, 0 1px 0 rgba(0, 0, 0, .5);
+}
+
+.progressbar-demographic-container {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.progressbar-text {
+    position: absolute;
+    color: $progressbar-text-color;
+    font-size: 12px;
+    line-height: 20px;
+    text-shadow: -1px 0 #a0a0a0, 0 1px #a0a0a0, 1px 0 #a0a0a0, 0 -1px #a0a0a0;
+    left: 0;
+    width: 100%;
+}
+.progressbar-from-right .progressbar-value{
+    float: right;
+}
+.progressbar-demographic-w {
+    .progressbar-value {
+        background: #dc891f;
+    }
+}
+.progressbar-demographic {
+    position: relative;
+    background-color: $progressbar-bg-color;
+    border-radius: 2px;
+    margin: 0;
+    height: 20px;
+    .progressbar-value {
+        height: 20px;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,82 @@
+/* typography */
+@import 'config';
+@import '../../1/sass/_mixins/font-size';
+html {
+  font-size: 100%;
+}
+
+
+body {
+  @include font-size($font-base-size);
+  font-family: $font-base-family;
+  line-height: $font-base-lineHeight;
+  color: $font-base-color;
+}
+
+body,
+input,
+select,
+textarea {
+  font-family: $font-base-family;
+}
+
+/* ==========================================================================
+   Headings and paragraph
+   ========================================================================== */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-style: normal;
+  margin-top: $font-base-spacing;
+  margin-bottom: $font-base-spacing;
+  .icon {
+    margin-right: 5px;
+  }
+}
+
+h1, .h1 {
+  @include font-size(28);
+}
+
+h2, .h2 {
+  @include font-size(21);
+}
+
+h3, .h3 {
+  @include font-size(17);
+}
+
+h4, .h4 {
+  @include font-size(14);
+}
+
+h5, .h5 {
+  @include font-size(13);
+}
+
+h6, .h6 {
+  @include font-size(11);
+}
+
+p {
+  margin-top: $font-base-spacing;
+  margin-bottom: $font-base-spacing;
+  font-family: Cambria, Georgia, serif;
+}
+
+/* code */
+pre,
+code {
+  font-family: Consolas, Monaco, "Lucida Console", monospace;
+}
+
+a {
+  color: $color-brand;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

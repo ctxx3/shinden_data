@@ -1,0 +1,47 @@
+details.embed {
+    summary {
+        cursor: pointer;
+        position: relative;
+        &::after {
+            position:absolute;
+            top:0;
+            right:0;
+            font-family: 'FontAwesome';
+            content: "\f078";
+            font-size:1.43rem;
+        }
+        a.img {
+            &:first-of-type {
+                float: left;
+            }
+            position:relative;
+
+            img.zoom-img {
+                position: absolute;
+                display: none;
+                z-index: 100;
+            }
+            &:hover .zoom-img {
+                display: block;
+                max-width:200px;
+            }
+        }
+        span {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+    img:not(.zoom-img) {
+        max-height:1.3rem;
+        margin:0;
+        margin-right: 0.3rem;
+    }
+    &[open] {
+        summary::after {
+            content: "\f077";
+        }
+        img:not(.zoom-img) {
+            max-height: 100px;
+        }
+    }
+}

@@ -1,0 +1,191 @@
+
+$color-background: #222222;
+$color-l-container-secondary: #262626;;
+/*napisy w menu, pasek pod komentami*/
+$color-background-2: #ededed;
+/*paski oddzielajace np w sezonach*/
+$color-background-3: #383838;
+/*tlo rozsowanych menu, paginacja, tlo tagow*/
+$color-background-clear: #262626;
+
+/*linki*/
+$color-brand: #840FAD;
+/*czarwony*/
+$color-brand-second: #ff0012;
+/*pozostale paski oddzielajace np pod "postacie", napisy w rozsunietych menu, podwietlenie po najechaniu np. w profilu*/
+$color-brand-dark: #383838;
+/*aktywna zakladka menu glownego, nakladki po najechaniu, szukaj w wyszukiwarce*/
+$color-brand-shade-dark: #310644; //
+$color-brand-shade-dark: #350646;
+$color-brand-shade-dark: darken($color-brand, 22%);
+/**/
+/*linki nowe multimedia*/
+$color-accent: #840FAD;
+
+/*czerwien*/
+$color-accent-2: #ff0000;
+/*kolor tekstu np w profilu "wiadomosci" i data, */
+$color-note-text: #fff;
+
+
+
+
+
+// @function color-diff($a, $b) {
+//    $sat: saturation($a) - saturation($b);
+//    $lig: lightness($a) - lightness($b);
+//    $fn-sat: if($sat > 0, 'desaturate', 'saturate');
+//    $fn-lig: if($lig > 0, 'darken', 'lighten');
+//
+//    @return (
+//      adjust-hue: -(hue($a) - hue($b)),
+//      #{$fn-sat}: abs($sat),
+//      #{$fn-lig}: abs($lig)
+//    );
+//  }
+//
+//  body {
+//      color: color-diff($color-brand, $color-accent);
+//  }
+
+
+
+
+$nav-user-bg-lvl1: $color-brand-shade-dark;
+$nav-user-lvl: #fff;
+$nav-user-bg-lvl2: $color-brand;
+$nav-user-lv2: $color-background-2;
+$nav-user-bg-active-lvl2: #fff;
+$nav-user-active-lv2: #000;
+
+$color-section-bottom-border: #3e3e3e;
+$color-table-strip-nd-row: #2f2f2f;
+
+/* sizes */
+$size-global-min-width: 1030px;
+$size-global-min-width: 350px;
+$size-global-max-width: 1030px;
+$size-footer-height: 220px;
+$size-primary-height: 322px;
+
+/* typography */
+$font-base-size: 14;
+$font-base-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+$font-base-lineHeight: 1.5;
+$font-base-spacing: 0.5em;
+$font-base-color: #eceaec;
+/*dodatkowe teksty np w ocenie "/10" albo link "dodaj nowy epizod", zobacz wszystkie w profilu, */
+$font-base-highlight: #fff;
+$font-base-lowlight: $color-brand-second;
+
+
+/* zmiany z czasu zmiany profilu */
+$color-background-medium: #222222;
+$color-medium: black;
+$color-medium-accent: #07400a;
+$tagsDefaultColor: $color-background-clear;
+$button-color: #eceaec;
+//UWAGA nie ma wpływu na kolory z pliku _buttons.scss
+$button-bg-color: #680b88;
+$button-radius: 3px;
+
+$font-rank-family: "Comfortaa",cursive;
+
+
+
+
+//pools - ankiety
+$pool-hover-quextion-bg-color: rgba($color-background-medium,0.3);
+$pool-hover-answer-bg-color: rgba($color-background-medium,0.3);
+
+$pool-border-color: $color-section-bottom-border;
+$pool-note-text: $color-note-text;
+$pool-disabled-color: lighten($pool-note-text, 20%);
+
+
+
+$pool-form-div-bgcolor: rgba($color-note-text,.3);
+$pool-votes-cnt-bgcolor: rgba($color-accent-2,0.3);
+
+
+
+//lista odcinkow - podświetlenie aktywnego playera
+
+$media-row-active-bg-color: rgba(mix(white,$color-accent,1%),0.3);
+$media-row-hover-bg-color: rgba(mix(white,$color-accent,20%),0.3);
+//KOLEJNOŚĆ - user - ustawienia
+
+
+$nav-color: white;
+$color-nav-hover: #999;
+$nav-color-hover: $nav-color;
+$sub-nav-color: $nav-color;
+$nav-bg-color: rgba(10, 10, 10, 0.7);
+$sub-nav-bg-color: #202020;
+
+$nav-font-weight: bold;
+$nav-font-family: "Comfortaa",cursive ;
+
+
+$cover-background: linear-gradient(to bottom,$color-brand,lighten($color-brand,10%),$color-brand);
+
+$input-color: #f0f0f0;
+$input-bg-color: #575757;
+$input-border-color: #404040;
+$input-ro-color: #ccc;
+$input-ro-bg-color: #3E3E3E;
+
+
+$creator-border-color: #3e3e3e;
+$creator-nav-bg-color: #363636;
+$creator-nav-border-color: $color-section-bottom-border;
+
+
+$left-col-bg: #272727;
+$left-col-bg-accent-color: darken($left-col-bg,5%);
+
+
+$footer-link-color: white;
+
+//KOLENOŚĆ: user - strona główna (z paskimi podobności)
+
+$similarity-color: $nav-color;
+$similarity-bg-color: darken($left-col-bg, 3%);
+
+$form-legend-color: $nav-color;
+$form-bg-legend-color: #363636;
+
+// KOLEJNOŚĆ: Wyszukiwarka anime
+$title-searchform-bg-color: $sub-nav-bg-color;
+$title-searchform-border-color: $input-border-color;
+$title-searchform-tab-color: #fff;
+$title-searchform-tab-bg-color: #262626;
+$title-searchform-active-tab-bg-color: $title-searchform-border-color;
+
+$pagination-hover-bg-color: #4d4d4d;
+$pagination-active-bg-color: #fff;
+$pagination-active-border-color:#ddd;
+
+//KOLEJNOŚĆ: GŁÓWNA
+$slider-link-color: $color-accent;
+$progressbar-bg-color: #707070;
+$progressbar-color: $color-accent;
+$progressbar-text-color: #ffffff;
+$progressbar-text-shadow-color: #a0a0a0;
+$title-relations-border: $progressbar-bg-color;
+
+$last-box-bg1-gradient: $left-col-bg;
+$last-box-bg2-gradient: $left-col-bg;
+
+
+//po kliknięciu: dodaj do listy
+$modal-overlay-color: darken(white, 20%);
+$modal-color: $font-base-color;
+$modal-bg-color: $left-col-bg;
+
+//KOLEJNOŚĆ: user/to-watch
+$to-watch-text-color: white;
+$to-watch-rate-icon-color: rgba($to-watch-text-color, 0.25);
+$transition-fast: 0.3s;
+
+$nav-main-mobile-break-point: 780px;

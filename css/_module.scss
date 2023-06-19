@@ -1,0 +1,73 @@
+///* Modules are the reusable, modular parts of our design. They are the callouts, the sidebar sections, the product lists and so on. */
+
+
+@import "../../1/sass/_modules/title-elements";
+
+//common structural
+@import '../../1/sass/_modules/box';
+@import '../../1/sass/_modules/media';
+@import '../../1/sass/_modules/data-view';
+@import '../../1/sass/_modules/tabs';
+@import '../../1/sass/_modules/messages';
+
+//popular
+@import '../../1/sass/_modules/form';
+@import '_modules/button';
+@import '../../1/sass/_modules/bubble';
+@import '../../1/sass/_modules/pagination';
+@import '../../1/sass/_modules/tags';
+@import '../../1/sass/_modules/progressbar';
+@import '../../1/sass/_modules/figure';
+
+//common used
+@import '../../1/sass/_modules/navigation';
+@import '../../1/sass/_modules/ads';
+@import '_modules/logo';
+@import '../../1/sass/_modules/icon';
+@import '../../1/sass/_modules/footer';
+
+//decorations
+@import '../../1/sass/_modules/slider';
+@import '../../1/sass/_modules/carousel';
+@import '../../1/sass/_modules/fb';
+
+
+//pages
+@import '../../1/sass/_modules/recommendation';
+@import '../../1/sass/_modules/info-aside';
+@import '../../1/sass/_modules/info-top';
+@import '../../1/sass/_modules/player';
+@import '../../1/sass/_modules/person';
+@import '../../1/sass/_modules/search-section';
+@import '../../1/sass/_modules/patterns';
+@import '../../1/sass/_modules/timeline';
+
+@import '../../1/sass/_modules/shop';
+@import '../../1/sass/_modules/relation';
+@import '../../1/sass/_modules/reviews';
+@import '../../1/sass/_modules/to-watch';
+@import '../../1/sass/_modules/sortable';
+
+
+@import '../../1/sass/_modules/pasek_strona';
+@import '../../1/sass/_modules/achievements';
+@import '../../1/sass/_modules/userprofile';
+@import '../../1/sass/_modules/userlist';
+@import '../../1/sass/_modules/user-stats';
+@import "../../1/sass/_modules/waifu";
+
+@import '../../1/sass/_modules/posts';
+@import '../../1/sass/_modules/rate';
+@import '../../1/sass/_modules/pools';
+@import '../../1/sass/_modules/embed';
+@import "../../1/sass/_modules/seasons";
+
+@import "../../1/sass/_modules/modals";
+@import "../../1/sass/_modules/home-page";
+@import "../../1/sass/_modules/title-list";
+@import "../../1/sass/_modules/episode-list";
+@import "../../1/sass/_modules/news";
+
+@import '_modules/nadpisywane';
+
+

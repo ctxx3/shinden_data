@@ -1,0 +1,197 @@
+.add-to-list-button {
+    position:relative;
+    cursor: pointer;
+
+    .priority, .recommend {
+        border-radius: 50%;
+        position:absolute;
+        left:14px;
+        background-color: gray;
+        color:white;
+        font-size: 0px;
+        padding:5px;
+        display: block;
+        min-width:3ex;
+        text-align: center;
+        margin-left:0em;
+        margin-top:0em;
+        &.minus {
+            background-color: red;
+        }
+        &.medium {
+            background-color: darken(yellow, 20);
+        }
+        &.max {
+            background-color: darken(green, 10);
+        }
+        transition: all .5s;
+    }
+    .priority {
+        top:-2px;
+    }
+    .recommend {
+        bottom: -2px;
+    }
+    &:hover .priority::not(.no), &:hover .recommend {
+        font-size: 10px;
+        &.none {
+            opacity:1;
+        }
+    }
+    &:hover .recommend {
+        bottom:-17px;
+    }
+    &:hover .priority::not(.no) {
+        top:-17px;
+    }
+
+
+    &.none {
+        opacity:0;
+    }
+}
+
+.anime-list .data-view-table-title {
+    h3:hover {
+        .add-to-list-button {
+            .fa-plus::before {
+                opacity: 1;
+            }
+        }
+    }
+    .add-to-list-button {
+        .fa-plus::before {
+            transition: all 0.3s;
+            opacity: .3;
+        }
+        figcaption {
+            display: none;
+        }
+    }
+}
+
+.to-watch{
+    .add-to-list-button {
+        figcaption {
+            display: none;
+        }
+    }
+    h2{
+        background-color: $form-bg-legend-color;
+        padding: 5px 12px;
+    }
+  &>ul{
+    padding-left:0;
+  }
+  .media-item {
+      h4{
+        border-bottom: 1px solid $color-section-bottom-border;
+        font-size: large;
+      }
+    aside {
+      float:left;
+      width: 49%;
+      a{
+        margin-right: 5px;
+        margin-bottom: 5px;
+      }
+      &>a {
+        float:left;
+        display: block;
+        width:120px;
+        img {
+         max-width:100%;
+         max-height:100%;
+        }
+      }
+      .title-description{
+        height: 47px;
+        overflow: hidden;
+        text-align:justify;
+        line-height: 1.3em;
+        cursor:pointer;
+        transition: all 1s;
+        &:hover{
+          height:80px;
+        }
+        &.full{
+          height:auto;
+          overflow:unset;
+        }
+      }
+      .tags a{
+        font-size: small;
+      }
+
+      .genres{
+          display:inline-block;
+          width:219px;
+      }
+
+      .stats{
+          float:left;
+          font-size: 18px;
+      }
+    }//END aside
+
+    .episodes{
+      i.ep, i.ep-all{
+        cursor:pointer;
+    }
+      width:50%;
+      float:right;
+        table{
+          width:100%;
+        }
+        .box-scrollable{
+               max-height:125px;
+          }
+    }
+  }//.media-item
+
+  .data-view-table-chapters{
+      td{
+          text-align: right;
+          &.ep-title{
+              text-align: left;
+          }
+          &:last-child, &.button-group{
+              text-align: center;
+          }
+      }
+  }
+}
+
+.well { // popup z ocenami
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    display: none;
+    min-height: 20px;
+    padding: 10px;
+    max-width:300px;
+}
+#title_edit{
+  h4{
+    font-size:x-large;
+    margin-top:0;
+}
+  .rate-stars {
+      clear: both;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 4px 0 ;
+  }
+  .rate-text {
+      float: left;
+      line-height: 14px;
+      padding-right: 6px;
+      text-align: right;
+      width: 65px;
+  }
+}
+
+body.api-iframe {
+    margin:0;
+}

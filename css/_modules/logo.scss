@@ -1,0 +1,27 @@
+
+.logo {
+	position: relative;
+	height: 300px;
+	background: url('../img/header.png');
+	background-position: center;
+	background-size: cover;
+}
+.logo-char {
+	position: absolute;
+	bottom: 0;
+	right:40px;
+	max-height: 290px;
+        @media (max-width:400px) {
+            left:auto;
+            right:10px;
+        }
+}
+.logo .logo-title {
+	height: (181px + 60px);
+	text-align: right;
+}
+.logo .logo-title img {
+	margin: 40px 0px 0px 50px;
+	left: 30px;
+	position: absolute;
+}

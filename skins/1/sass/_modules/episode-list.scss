@@ -1,0 +1,182 @@
+.page-anime-episodes {
+    .data-view-table-episodes {
+        @media (max-width: 450px) {
+            .ep-title {
+                display: none;
+            }
+        }
+        @media (max-width: 600px) {
+            .ep-date {
+                display: none;
+            }
+        }
+    }
+}
+.video-report-player-info {
+    margin-bottom: .9rem;
+}
+
+section.video-info {
+    background-color: $left-col-bg;
+    padding: 0.7rem;
+    border-radius: 0!important;
+}
+.mark-as-view {
+    text-align: right;
+    button {
+        font-size: small;
+    }
+}
+
+
+.fav-ico {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin: 3px;
+    position:relative;
+    top:4px;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: none;
+    &.favicon-animeon {
+        background-image: url(../../../css/favicons/animeon.ico);
+    }
+    &.favicon-okami {
+        background-image: url(../../../css/favicons/okami.png);
+    }
+    &.favicon-animesub {
+        background-image: url(../../../css/favicons/animesub.ico);
+    }
+    &.favicon-animezone {
+        background-image: url(../../../css/favicons/animezone.ico);
+    }
+    &.favicon-a-o {
+        background-image: url(../../../css/favicons/a-o.ico);
+    }
+    &.favicon-kreskoweczki {
+        background-image: url(../../../css/favicons/kreskoweczki.ico);
+    }
+    &.favicon-senpai {
+        background-image: url(../../../css/favicons/senpai.ico);
+    }
+    &.favicon-shinden {
+        background-image: url(../../../css/favicons/shinden.gif);
+    }
+    &.favicon-kissanime {
+        background-image: url(../../../css/favicons/kissanime.ico);
+    }
+    &.favicon-katakanasubs {
+        background-image: url(../../../css/favicons/katakanasubs.png);
+        //background-image: url(../../../css/favicons/katakanasubs.ico);
+    }
+
+    &.favicon-animawka {
+        background-image: url(../../../css/favicons/animawka.png);
+    }
+    &.favicon-wbijam {
+        background-image: url(../../../css/favicons/wbijam.png);
+    }
+    &.favicon-dansetsu {
+        background-image: url(../../../css/favicons/dansetsu.ico);
+    }
+    &.favicon-kyozetsu {
+        background-image: url(../../../css/favicons/kyozetsu.ico);
+    }
+}
+
+
+
+.table-responsive {
+
+    @media (max-width: 600px) {
+        .chap-type, .chap-date {
+            display: none;
+        }
+    }
+    @media (max-width: 450px) {
+        .chap-title {
+            display: none;
+        }
+    }
+}
+
+.title-rel {
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .rel-item {
+        display:flex;
+        width: 100%;
+        a {
+            width: initial;
+        }
+        &.next, &.alt{
+            margin-left:3px;
+            flex-direction: row-reverse;
+            & > * {
+                margin-left: 7px;
+            }
+        }
+        &.alt .rnd {
+            order:4;
+        }
+        &.prev {
+            margin-right: 3px;
+            & > *{
+                margin-right: 7px;
+            }
+        }
+        & > div {
+            flex-grow: 1;
+            ul{
+                display: flex;
+                align-content: space-between;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                li{
+                    white-space: nowrap;
+                    flex-grow: 1;
+                }
+            }
+        }
+
+        /*
+        &:hover {
+            background-color: rgba($color-note-text, .1);
+        }
+        */
+        align-items: center;
+        .rnd {
+            background-color: rgba($color-brand, .5);
+            color:$color-l-container-secondary;
+            padding:7px;
+            padding-top:13px;
+            border-radius: 7px;
+        }
+        .fa {
+            font-size: 70px;
+        }
+        h4 {
+            margin: 0;
+            line-height: 1;
+            border-bottom: 1px solid $color-brand-dark;
+            height: 2em;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 0 3px 3px;
+            font-size: 1.2rem;
+
+        }
+        div li {
+            padding:0 3px;
+            font-weight: bold;
+            strong {
+                font-weight: normal;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

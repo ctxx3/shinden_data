@@ -1,0 +1,113 @@
+.posts{
+    .box-title{
+        border-bottom: 1px solid $color-section-bottom-border;
+        font-family: "Comfortaa",cursive;
+        letter-spacing: 1px;
+        margin:  10px 0 0;
+        //text-transform: uppercase;
+    }
+
+}
+ul.posts{
+    list-style: none;
+    padding: 0;
+    & >li{
+        @include clearfix();
+        margin-bottom: 7px;
+        padding: 3px 12px;
+        border-radius: 5px;
+
+        summary{
+            font-size: 1.2rem;
+        }
+        details{
+            float: right;
+            text-align: right;
+            color: $color-note-text;
+            font-size: small;
+            line-height: 1em;
+            .timeago{
+                display: block;
+            }
+        }
+        &:hover{
+            background-color: rgba($color-background-3, .2);
+        }
+
+    }
+    .reply{
+        border-left: 5px solid $color-section-bottom-border;
+        padding-left: 7px;
+        display: table;
+    }
+    a.forum{
+        font-style: italic;
+    }
+    a.thread{
+        font-weight: bold;
+    }
+}
+
+
+.av-rank{
+    background: $color-background-clear none repeat scroll 0 0 padding-box;
+    border: 1px solid $color-background-3;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    max-height: 200px;
+    overflow: hidden;
+    transition: all 0.2s ease 0.2s;
+    width: 100px;
+    .rank {
+        display: block;
+        font-family: $font-rank-family;
+        margin: 0.5em 3px;
+        text-align: center;
+    }
+}
+fieldset.quote{
+    padding-left: 1em;
+    background-color: rgba($form-bg-legend-color, .5);
+    color:$form-legend-color;
+    &::before{
+        content: ',,';
+        float:left;
+        font-size: 90px;
+        color:$color-accent;
+        display: block;
+        position: relative;
+        top:-86px;
+        font-family: serif;
+        height: 20px;
+        letter-spacing: -9px;
+        margin-right: 10px;
+    }
+    legend{
+        display: none;
+    }
+}
+
+
+//Posty w epizodach
+.posts-last{
+    .box-title{
+        font-size: 1.2em;
+    }
+    .add-post{
+        margin: 1em;
+        summary{
+            margin: 0.5em 0;
+        }
+        textarea{
+            width: 100%;
+        }
+        .buttons{
+            margin-top:0.5em;
+            text-align: center;
+            padding: 7px;
+            background-color: $color-background-2;
+        }
+    }
+}

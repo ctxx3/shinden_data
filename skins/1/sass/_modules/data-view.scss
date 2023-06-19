@@ -1,0 +1,264 @@
+
+@import '../_mixins/border-radius';
+@import '../_mixins/box-shadow';
+@import '../_mixins/vertical-align';
+@import '../_mixins/linear-gradient';
+@import '../_mixins/transition';
+@import '../_mixins/box-shadow';
+@import '../_mixins/clearfix';
+@import '../_mixins/box-sizing';
+
+$data-view-padding: 10px;
+.data-view-table {
+    td {
+        text-align: left;
+        &:first-child, &.data-view-table-label {
+            text-align: right;
+            vertical-align: top;
+            padding-right:$data-view-padding;
+            padding-left: $data-view-padding;
+        }
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+    }
+}
+
+
+.data-view-table-big {
+    width: 99%;
+    .ep-buttons {
+        min-width: 100px;
+    }
+    .add-item-link {
+        @media (max-width:500px){
+            min-width: 40px;
+        }
+    }
+}
+.data-view-table-full {
+    width: 100%;
+}
+.data-view-table-full td:first-child {
+    width:60px;
+}
+.data-view-list {
+    list-style: none;
+    text-align: left;
+    display: inline-block;
+    padding: 0 $data-view-padding;
+    margin: 0;
+    @media (max-width:700px){
+        display:block;
+    }
+    li {
+        @include clearfix();
+    }
+}
+.data-view-list-img {
+    margin-right: 5px;
+}
+
+.data-view-table-cover {
+    background: $cover-background;
+    padding: 1px;
+    background-size: 100% 100%;
+    width: 47px;
+}
+
+
+.data-view-table-3-items {
+    td:first-child, td.data-view-table-label {
+        width: 25%;
+    }
+}
+
+.data-view-table-strips tr:nth-child(2n), .data-view-even{
+    background-color: $color-table-strip-nd-row;
+}
+
+//czasem nie mozna uzywac css3 nth-child (np dynamiczne table z szczegolami) wtedy dajemy to
+.data-view-odd {
+
+}
+
+
+.data-view-table-more {
+    display: none;
+    border-bottom: 1px solid $color-background-3;
+    border-top: 1px solid $color-background-3;
+
+    > * {
+        padding: 5px 10px 10px 10px;
+    }
+}
+
+.data-view-table-episodes{
+    td{
+        text-align:center;
+    }
+    .ep-ep {
+        width: 55px;
+    }
+    .ep-stream {
+        width:90px;
+    }
+    .ep-date {
+        width: 70px;
+    }
+    .ep-online {
+        width: 60px;
+    }
+    .ep-ver {
+        width: 65px;
+    }
+    .ep-saw {
+        width:18px;
+    }
+}
+
+.data-view-table-tags {
+    width: 100%;
+    .lp-col {
+        width: 10px;
+        text-align: center;
+    }
+    .image-col {
+        text-align: center;
+        width: 110px;
+        @media (max-width:400px){
+            width:80px;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    .name-col {
+        width: 150px;
+    }
+    .info-col {
+        width: 100px;
+        text-align: center;
+    }
+}
+
+.data-view-table-forum {
+    td{
+        text-align:center;
+    }
+    .post-col {
+        width: 75px;
+    }
+    .author-col {
+        width: 110px;
+    }
+    .seen-col {
+        width: 75px;
+    }
+    .last-col {
+        width: 130px;
+    }
+}
+
+.data-view-table-alt-titles {
+    td {
+        text-align: center;
+    }
+}
+
+
+.data-view-article {
+    padding: 10px;
+    border-bottom: 1px solid $color-background-2;
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 5px auto;
+        @media (max-width:700px){
+            &:not(.zoom-img) {
+                max-width:100%!important;
+                height:auto!important;
+                //&.zoom-img {
+                //    display: none;
+                //}
+            }
+        }
+    }
+    .data-view-article-image {
+        margin: 5px 10px 5px 5px;
+        width: 100px;
+        display: inline;
+        float:left;
+    }
+    > p {
+        text-indent: 0px;
+        margin: 0;
+        padding: 0 5px;
+    }
+}
+.data-view-article-center {
+    text-align: center;
+}
+.data-view-article-title {
+    margin-bottom: 0;
+    .more {
+        float: right;
+        color: $color-note-text;
+
+    }
+}
+.data-view-article-subtitle {
+    color: $color-note-text;
+}
+
+.data-view-dl {
+    margin-top: 0;
+    margin-bottom: 20px;
+    dt, dd {
+        line-height: 1.428571429
+    }
+    dt {
+        font-weight: 700
+    }
+    dd {
+        margin-left: 0
+    }
+    &.dl-horizontal dt {
+        float: left;
+        width: 60px;
+        clear: left;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+    &.dl-horizontal dd {
+        margin-left: 80px
+    }
+    .data-view-dl {
+        margin-left: 15px;
+    }
+}
+
+.data-view-3-columns {
+    @include column-count(3);
+    > * {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid $color-background-2;
+    }
+}
+
+
+.data-view-hover {
+    tbody tr {
+        &.active {
+            background-color: $media-row-active-bg-color;
+        }
+        &:hover {
+            background-color: $media-row-hover-bg-color;
+        }
+    }
+}

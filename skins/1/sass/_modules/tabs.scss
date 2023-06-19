@@ -1,0 +1,65 @@
+
+
+.tabs {
+    margin: 0 3px;
+    padding: 0;
+    list-style: none;
+    height: 19px;
+    border-bottom: 1px solid $title-searchform-border-color;
+    margin-bottom:20px;
+    &.creator-form-tabs {
+        margin-bottom:0;
+    }
+}
+.tab-item-container {
+    border: 1px solid $title-searchform-border-color;
+    border-top: 0 none transparent;
+    padding:0.5em;
+    margin: 0 3px 0.5em;
+}
+.tabs li {
+    float: left;
+    margin: 0 0 -1px 0;
+    padding: 0;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid $title-searchform-border-color;
+    margin-bottom: -1px;
+    overflow: hidden;
+    position: relative;
+    background: $title-searchform-tab-bg-color;
+    margin-right:5px;
+    min-width:73px;
+    text-align:center;
+
+}
+.tabs.seasons-items-tabs li{
+    min-width:60px;
+}
+.tabs li:first-child{
+    margin-left: 10px;
+
+}
+.tabs li a {
+    text-decoration: none;
+    color: $title-searchform-tab-color;
+    display: block;
+    font-size: 11px;
+
+    padding-right:5px;
+    padding-left:5px;
+
+    outline: none;
+}
+.tabs li a:hover {
+    background: $title-searchform-active-tab-bg-color;
+}
+html .tabs li.active, html ul.tabs li.active a:hover  {
+    background: $title-searchform-active-tab-bg-color;
+    border-bottom: 1px solid $title-searchform-active-tab-bg-color;
+}
+///* extensions */
+
+ul.seasons-items-tabs {
+    margin-bottom:5px;
+}

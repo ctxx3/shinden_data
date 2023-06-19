@@ -1,0 +1,64 @@
+
+$icon-green-color: #42CEAB;
+
+.icon-img {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+
+///* extensions */
+.icon-img-list {
+	padding-left: 22px;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+///* icons */
+.icon-favourite {
+	background-image: url('../img/fav.png');
+}
+
+.icon-with-text {
+	@include border-radius(5px);
+	background-color: $icon-green-color;
+	color: $color-background;
+	padding: 1px 7px;
+}
+.icon-fa-text {
+	font-size: 10px;
+    background-color: lighten($font-base-color,8%);
+    line-height: 9px;
+    margin-top: 45%;
+    margin-left: 40%;
+    width: auto;
+    padding: 2px;
+    border-radius: 3px;
+    color: invert($font-base-color);
+    position: absolute;
+    left: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.icon-fa-text-long {
+	margin-right: 15px;
+}
+
+.flag-icon-en{
+	background-image:url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/flags/4x3/gb.svg)
+}
+.flag-icon-en.flag-icon-squared{
+	background-image:url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/flags/1x1/gb.svg)
+}
+
+
+.visible-hover {
+    opacity: 0.5;
+    &:hover {
+        opacity: 1;
+    }
+}
