@@ -1,5 +1,0 @@
-@mixin box-sizing($border-style) {
-  -webkit-box-sizing: $border-style; /////* Safari/Chrome, other WebKit */
-  	 -moz-box-sizing: $border-style;    /////* Firefox, other Gecko */
-  		  box-sizing: $border-style;         /////* Opera/IE 8+ */
-}

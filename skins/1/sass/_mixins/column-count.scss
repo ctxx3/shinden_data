@@ -1,5 +1,0 @@
-@mixin column-count($cnt) {
-  -webkit-column-count: $cnt; /////* Chrome, Safari, Opera */
-     -moz-column-count: $cnt; /////* Firefox */
-    	  column-count: $cnt;
-}

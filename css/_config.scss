@@ -123,8 +123,8 @@ $sub-nav-color: $nav-color;
 $nav-bg-color: rgba(10, 10, 10, 0.7);
 $sub-nav-bg-color: #202020;
 
-$nav-font-weight: bold;
-$nav-font-family: "Comfortaa",cursive ;
+$nav-font-weight: initial;
+$nav-font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
 
 
 $cover-background: linear-gradient(to bottom,$color-brand,lighten($color-brand,10%),$color-brand);
