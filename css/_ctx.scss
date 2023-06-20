@@ -13,7 +13,7 @@
 }
 
 .top-bar {
-    font-size: 18px !important;
+    font-size: 16px;
     display: flex;
     height: 60px;
     align-items: center;
@@ -32,7 +32,7 @@
         align-items: center;
 
         .main-search {
-            margin: 0 !important;
+            margin: 0px 0px 0px 10px !important;
         }
 
         .mobile-visible {
@@ -41,13 +41,14 @@
 
         margin-left: auto;
 
-        @media (max-width:780px) {
+        @media (max-width:992px) {
             margin-left: initial;
             flex-direction: row-reverse;
         }
 
         .przycisk {
-            display: none;
+            order: 0;
+            bottom: initial;
         }
 
         button[type="submit"] {
@@ -80,7 +81,8 @@
     align-items: center;
 
     a {
-        font-size: 18px !important;
+        font-size: 16px;
+        text-transform: initial;
     }
 }
 
