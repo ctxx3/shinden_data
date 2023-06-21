@@ -1,7 +1,3 @@
-body {
-  background: #0e0011;
-}
-
 .seasons-list a {
   display: block;
   height: 42px;
@@ -40,18 +36,58 @@ body {
   text-align: center;
   background: #270932 !important;
 }
-.l-main-contantainer{
+
+.l-main-contantainer {
   background: #17021e !important;
 }
-.newTitle span{
+
+.newTitle span {
   background-color: #270932 !important;
 }
-.my-row{
+
+.my-row {
   background-color: #270932;
 }
-.col-xs-12{
+
+.col-xs-12 {
   background: #270932 !important;
 }
-.box-new-series{
+
+.box-new-series {
   background: #270932;
+}
+
+.search-section button {
+  height: 28px;
+  border-radius: 5px !important;
+  color: #fff;
+  background: #270932;
+  border-color: #07010900 !important;
+}
+
+.creator-form select.datepicker {
+  width: 9% !important;
+}
+
+.creator-form select {
+  width: 76% !important;
+}
+
+.creator-form input {
+  width: 75% !important;
+}
+
+.creator-form select.datepicker,
+.creator-form select,
+.creator-form input,
+.creator-form textarea {
+  border-radius: 0.375rem !important;
+}
+
+.navigation {
+  background: #270932 !important;
+}
+
+.data-view-list {
+  border: 2px solid black !important;
 }
