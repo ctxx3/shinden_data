@@ -11,14 +11,39 @@
 
         .toggle-menu {
             top: initial;
+            @media (max-width:992px) {
+                display: block !important;
+            }
         }
 
         &--menu {
             display: flex;
             align-items: center;
+
+            @media (max-width:992px) {
+                order: 1;
+                margin-left: auto;
+                margin-right: 20px;
+            }
+
+            .toggle-menu {
+                position: initial;
+                right: initial;
+            }
         }
 
         &--user {
+            #menu-search{
+                @media (max-width:992px) {
+                    display: none;
+                }
+                input{
+                    @media (max-width:1200px) {
+                        width: 150px;
+                    }
+                }
+            }
+
             display: flex;
             align-items: center;
 
@@ -57,6 +82,13 @@
                 display: flex;
                 align-items: center;
             }
+            .search-toggle{
+                height: initial;
+                overflow: initial;
+                @media (max-width:992px) {
+                    display: inline-block;
+                }
+            }
         }
 
         &--nav-user {
@@ -64,6 +96,7 @@
             border-radius: .375rem;
         }
     }
+
     &-button {
         background-color: transparent !important;
         border-top: 0px !important;
@@ -72,26 +105,29 @@
     }
 }
 
-
-.nav-list {
-    display: flex;
-    margin: 0 !important;
-    align-items: center;
-
-    a {
-        font-size: 16px;
-        text-transform: initial;
+.nav {
+    @media (max-width:992px) {
+        display: none;
     }
-}
+    &-list {
+        display: flex;
+        margin: 0 !important;
+        align-items: center;
 
-.nav-main-sub {
-    height: initial !important;
-    padding: 5px 4px 5px 4px !important;
-
-    a {
-        font-size: 14px !important;
+        a {
+            font-size: 16px;
+            text-transform: initial;
+        }
     }
 
+    &-main-sub {
+        height: initial !important;
+        padding: 5px 4px 5px 4px !important;
+
+        a {
+            font-size: 14px !important;
+        }
+    }
 }
 
 .figure-list {
@@ -118,4 +154,7 @@
             background-color: #212529 !important;
         }
     }
+}
+#lm, #la, #admin-notify{
+    top: 60px;
 }
