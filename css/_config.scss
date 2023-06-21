@@ -9,7 +9,8 @@ $color-background-3: #383838;
 $color-background-clear: #1f001b;
 
 /*linki*/
-$color-brand: #840FAD;
+//$color-brand: #840FAD;
+$color-brand: #b21cd0;
 /*czarwony*/
 $color-brand-second: #ff0012;
 /*pozostale paski oddzielajace np pod "postacie", napisy w rozsunietych menu, podwietlenie po najechaniu np. w profilu*/
@@ -21,6 +22,7 @@ $color-brand-shade-dark: darken($color-brand, 22%);
 /**/
 /*linki nowe multimedia*/
 $color-accent: #840FAD;
+//$color-accent: #fff;
 
 /*czerwien*/
 $color-accent-2: #ff0000;
@@ -69,7 +71,7 @@ $size-footer-height: 220px;
 $size-primary-height: 322px;
 
 /* typography */
-$font-base-size: 14;
+$font-base-size: 16;
 $font-base-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 $font-base-lineHeight: 1.5;
 $font-base-spacing: 0.5em;
