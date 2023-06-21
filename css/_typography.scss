@@ -1,6 +1,8 @@
 /* typography */
 @import 'config';
 @import '../../1/sass/_mixins/font-size';
+
+$font-base-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
 html {
   font-size: 100%;
 }
@@ -70,7 +72,7 @@ p {
 /* code */
 pre,
 code {
-  font-family: Consolas, Monaco, "Lucida Console", monospace;
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue";
 }
 
 a {
