@@ -61,7 +61,7 @@
   height: 28px;
   border-radius: 5px !important;
   color: #fff;
-  //background: #270932;
+  background: #272727;
   border-color: #07010900 !important;
 }
 
@@ -98,8 +98,7 @@
   overflow: visible;
   display: inline-block;
   padding: 0.3em 0.6em 0.375em;
-  border: 2px solid #0070e7 ;
-  
+  border: 2px solid #0070e7 !important ;
   border-radius: 0.375rem;
   margin: 0;
   text-decoration: none;
@@ -108,7 +107,7 @@
   //white-space: nowrap;
   cursor: pointer;
   color: #0070e7 !important;
-  background-color: #4e4e4e  !important;
+  background-color: #272727 !important;
   background-image: none !important;
   //filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="#f5f6f6", EndColorStr="#e4e4e3");
   //box-shadow: 0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 ;
@@ -119,6 +118,9 @@
 .button:hover{
   background-color: #002144 !important;
   color: white !important;
-  border: 2px solid #007bff
+ 
   box-shadow: 0px 1px 2px #002144;
+}
+.posts-last, .add-post, .buttons{
+  background-color: #272727 !important;
 }
