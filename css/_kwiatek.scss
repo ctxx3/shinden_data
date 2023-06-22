@@ -121,6 +121,9 @@
  
   box-shadow: 0px 1px 2px #002144;
 }
-.posts-last, .add-post, .buttons{
-  background-color: #272727 !important;
+.posts-last, .add-post textarea{
+  border-radius: 0.375rem !important;
+} 
+.buttons{
+  background-color: #222222 !important;
 }
