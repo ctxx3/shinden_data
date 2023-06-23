@@ -74,7 +74,7 @@
 }
 
 .creator-form input {
-  width: 75% !important;
+  //width: 75% !important;
 }
 
 .creator-form select.datepicker,
@@ -100,7 +100,7 @@
   padding: 0.3em 0.6em 0.375em;
   border: 2px solid #0070e7 !important ;
   border-radius: 0.375rem;
-  margin: 0;
+  margin: 0.1rem 0.125rem;
   text-decoration: none;
   text-align: center;
   font:  14px/normal "lucida grande",tahoma,verdana,arial,sans-serif;
@@ -109,7 +109,6 @@
   color: #0070e7 !important;
   background-color: #272727 !important;
   background-image: none !important;
-  //filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="#f5f6f6", EndColorStr="#e4e4e3");
   //box-shadow: 0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 ;
   box-shadow: 0px 1px 4px #002144;
   //zoom: 1;
