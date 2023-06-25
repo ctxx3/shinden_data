@@ -10,18 +10,17 @@ $color-background-clear: #272727;
 
 /*linki*/
 //$color-brand: #840FAD;
-$color-brand: #C165F0;
+$color-brand: #B668F9;
 /*czarwony*/
 $color-brand-second: #ff0012;
 /*pozostale paski oddzielajace np pod "postacie", napisy w rozsunietych menu, podwietlenie po najechaniu np. w profilu*/
 $color-brand-dark: #383838;
 /*aktywna zakladka menu glownego, nakladki po najechaniu, szukaj w wyszukiwarce*/
-$color-brand-shade-dark: #310644; //
-$color-brand-shade-dark: #350646;
-$color-brand-shade-dark: darken($color-brand, 22%);
+// $color-brand-shade-dark: desaturate(darken($color-brand, 45%),50%);
+$color-brand-shade-dark: #5F1B8C;
 /**/
 /*linki nowe multimedia*/
-$color-accent: #AD5AD6;
+$color-accent: darken($color-brand, 10%);
 //$color-accent: #fff;
 
 /*czerwien*/

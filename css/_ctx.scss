@@ -73,11 +73,19 @@
                 width: 38px;
                 height: 38px !important;
                 border-radius: 0.375rem;
-                border: 1px solid #198754 !important;
-                color: #198754 !important;
+                border: 2px solid $color-brand !important;
+                color: $color-brand !important;
                 background-color: transparent !important;
                 padding: 0 !important;
                 margin: 0 !important;
+                transition-duration: .2s;
+
+                &:hover {
+                    background-color: $color-brand-shade-dark !important;
+                    color: white !important;
+
+                    box-shadow: 0px 1px 2px $color-brand-shade-dark;
+                }
             }
 
             fieldset {
@@ -224,26 +232,26 @@
     }
 }
 
-span.mobile-small-hidden {
+.button-group span.mobile-small-hidden {
     display: inline-flex;
     align-items: center;
     justify-content: end;
     padding: 0.3em 0.6em 0.375em;
-    border: 2px solid #0070e7 !important;
-    background-color: #272727 !important;
+    border: 2px solid $color-brand !important;
+    background-color: $color-background-clear !important;
     margin: 0.1rem 0.125rem;
-    color: #0070e7 !important;
-    box-shadow: 0px 1px 4px #002144;
+    color: $color-brand !important;
+    box-shadow: 0px 1px 4px $color-brand-shade-dark;
     border-radius: 0.375rem;
     position: relative;
     font: normal normal normal 14px/1 FontAwesome;
     cursor: pointer;
 
     &:hover {
-        background-color: #002144 !important;
+        background-color: $color-brand-shade-dark !important;
         color: white !important;
 
-        box-shadow: 0px 1px 2px #002144;
+        box-shadow: 0px 1px 2px $color-brand-shade-dark;
     }
 
     :nth-child(1) {
@@ -317,8 +325,38 @@ span.mobile-small-hidden {
     z-index: 5 !important;
 }
 
+.parent-page {
+
+    &-anime-episodes,
+    &-anime-all-episodes,
+    &-episode-view {
+        width: 100%;
+        display: flex;
+
+        .info-aside {
+            flex: 1 0 auto;
+            box-sizing: border-box;
+
+        }
+
+        .page-anime-episodes{
+            flex: 1 1 auto;
+            box-sizing: border-box;
+        }
+
+        @media (max-width:600px) {
+            flex-wrap: wrap;
+        }
+    }
+}
+.episode-player-list {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+}
+
 .parent-page-anime-episodes,
-.parent-page-anime-all-episodes {
+.parent-page-anime-all-episodes,
+.parent-page-episode-view {
     width: 100%;
     display: flex;
 
@@ -327,7 +365,8 @@ span.mobile-small-hidden {
         box-sizing: border-box;
     }
 
-    .page-anime-episodes {
+    .page-anime-episodes,
+    .episode-player-list {
         flex: 1 1 auto;
         box-sizing: border-box;
     }
@@ -397,4 +436,111 @@ span.mobile-small-hidden {
 
 .fancy-bar {
     display: none;
+}
+
+
+.figure-list {
+    li {
+        cursor: pointer;
+        width: initial;
+        //margin-bottom: initial;
+        margin-right: 20px;
+        border: 2px solid $color-brand-shade-dark;
+        border-radius: 0.375rem;
+
+        &:hover {
+
+            figure figcaption,
+            .t2t-delete {
+                visibility: initial;
+                opacity: 1;
+            }
+
+            figure img {
+                filter: brightness(.2);
+            }
+        }
+
+        .t2t-delete {
+            transition-duration: .2s;
+            opacity: 0;
+            visibility: hidden;
+            padding: initial;
+            top: 0;
+            bottom: initial;
+            z-index: 2;
+            right: 2px;
+            font-size: 18px;
+        }
+
+        figure {
+            width: 120px;
+
+            figcaption {
+                transition-duration: .2s;
+                opacity: 0;
+                visibility: hidden;
+                padding: 0;
+                border: 0;
+                position: absolute;
+                z-index: 1;
+                width: 100%;
+                top: 2px;
+
+                &:first-of-type {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:last-of-type {
+                    top: initial;
+                    bottom: 0px;
+                    position: absolute;
+                    display: block;
+                }
+            }
+
+            img {
+                transition-duration: .2s;
+                border-radius: 0.375rem;
+                width: 100%;
+                height: initial;
+                aspect-ratio: 3/5;
+            }
+        }
+    }
+}
+
+.title-rel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .col-sm-6 {
+        max-width: 50%;
+        width: auto;
+
+        .rel-item {
+            border: 2px solid $color-brand;
+            padding: 5px;
+            border-radius: 0.375rem;
+            box-sizing: border-box;
+        }
+    }
+
+    .col-xs-12 {
+        @media (max-width:765px) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    .col-xs-none {
+        display: none;
+    }
+    .box-title{
+        width: 100%;
+    }
 }
