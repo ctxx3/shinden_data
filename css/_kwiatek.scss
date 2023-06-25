@@ -87,9 +87,6 @@
   //background: #270932 !important;
 }
 
-.data-view-list {
-  border: 2px solid black !important;
-}
 .button {
  letter-spacing: 1px;
   position: relative;
@@ -150,8 +147,9 @@
 .character-list ul{
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start !important;
+ 
   li{
     width: 50%;
+    padding: 0;
   }
 }
