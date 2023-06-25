@@ -142,3 +142,16 @@
 .search-section label{
   padding-bottom: 1%;
 }
+.pagination ul {
+  text-align: center  !important;
+  display:block !important;
+  
+}
+.character-list ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start !important;
+  li{
+    width: 50%;
+  }
+}
