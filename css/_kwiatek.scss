@@ -2,7 +2,6 @@
   display: block;
   height: 42px;
   line-height: 42px;
-  //background: #240b36;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
@@ -121,9 +120,25 @@
  
   box-shadow: 0px 1px 2px $color-brand-shade-dark;
 }
-.posts-last, .add-post textarea{
+.posts-last, .add-post textarea {
   border-radius: 0.375rem !important;
+  
+  textarea{
+    color: white;
+    background-color: #383838 !important;
+  
+  }
 } 
 .buttons{
   background-color: #222222 !important;
+}
+.tt-dropdown-menu{
+  background-color: #383838 !important;
+}
+.tabs li {
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem; 
+}
+.search-section label{
+  padding-bottom: 1%;
 }
