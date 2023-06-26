@@ -148,7 +148,7 @@
     }
 }
 
-.main-search {
+.top-bar--user .main-search {
     .twitter-typeahead {
         margin-right: 0.5rem;
         top: initial !important;
@@ -188,6 +188,8 @@
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
+                    gap: 10px;
+                    padding: 0 40px;
                     list-style: none;
                     flex-wrap: wrap;
 
@@ -278,6 +280,11 @@
         margin: 0 !important;
         top: calc(116% * var(--nth-child) - 2px);
 
+        @media (max-width:1650px) {
+            left: initial;
+            right: 104%;
+        }
+
         &.add::after {
             content: " Dodaj video";
         }
@@ -337,9 +344,10 @@
             flex: 1 0 auto;
             box-sizing: border-box;
 
+
         }
 
-        .page-anime-episodes{
+        .page-anime-episodes {
             flex: 1 1 auto;
             box-sizing: border-box;
         }
@@ -349,6 +357,7 @@
         }
     }
 }
+
 .episode-player-list {
     flex: 1 1 auto;
     box-sizing: border-box;
@@ -380,7 +389,7 @@
     width: 100% !important;
 }
 
-.modal-body .data-view-list {
+.add-to-list-modal .modal-body .data-view-list {
     width: 100%;
     height: 100%;
     display: flex;
@@ -402,9 +411,13 @@
     li {
         width: 25%;
     }
+
+    .full {
+        width: 100%;
+    }
 }
 
-.modal {
+.add-to-list-modal .modal {
     &-layer {
         background-color: rgba(0, 0, 0, 0.75);
     }
@@ -416,6 +429,7 @@
 }
 
 .title-cover {
+    overflow: initial !important;
     .info-aside-img {
         padding: 0;
     }
@@ -462,13 +476,13 @@
         }
 
         .t2t-delete {
-            transition-duration: .2s;
+            transition-duration: .15s;
             opacity: 0;
             visibility: hidden;
             padding: initial;
             top: 0;
             bottom: initial;
-            z-index: 2;
+            z-index: 3;
             right: 2px;
             font-size: 18px;
         }
@@ -477,7 +491,7 @@
             width: 120px;
 
             figcaption {
-                transition-duration: .2s;
+                transition-duration: .15s;
                 opacity: 0;
                 visibility: hidden;
                 padding: 0;
@@ -491,6 +505,16 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    z-index: 2;
+                    height: 100%;
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        height: 100%;
+                    }
                 }
 
                 &:last-of-type {
@@ -516,7 +540,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     .col-sm-6 {
         max-width: 50%;
@@ -530,6 +554,11 @@
         }
     }
 
+    // &> :last-child:not(:empty) {
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
+
     .col-xs-12 {
         @media (max-width:765px) {
             max-width: 100%;
@@ -540,7 +569,35 @@
     .col-xs-none {
         display: none;
     }
-    .box-title{
+
+    .box-title {
         width: 100%;
+    }
+}
+
+.genre-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+
+    li {
+        width: initial !important;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dbl-w {
+        width: initial !important;
+        //width: 15% !important;
+    }
+}
+
+.letter-list {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 !important;
+
+    li {
+        padding-top: 10px !important;
     }
 }
