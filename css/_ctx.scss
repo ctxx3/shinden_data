@@ -34,6 +34,10 @@
         }
 
         &--user {
+            .top-button {
+                margin-top: 0 !important;
+            }
+
             #menu-search {
                 @media (max-width:992px) {
                     display: none;
@@ -419,7 +423,7 @@
 
 .add-to-list-modal .modal {
     &-layer {
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.75) !important;
     }
 
     &-body {
@@ -430,6 +434,7 @@
 
 .title-cover {
     overflow: initial !important;
+
     .info-aside-img {
         padding: 0;
     }
@@ -599,5 +604,76 @@
 
     li {
         padding-top: 10px !important;
+    }
+}
+
+#login_form_background {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    opacity: 1 !important;
+}
+
+.form-login {
+    border: 0;
+
+    #fb-login-link {
+        height: 33px;
+
+        .i {
+            filter: invert(46%) sepia(48%) saturate(2358%) hue-rotate(237deg) brightness(101%) contrast(95%);
+        }
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        border-radius: 0.375rem;
+    }
+
+    .form-login-list {}
+}
+
+.creator-form, .horizontal-form {
+    .navigation {
+        border-top: 0;
+        background: initial;
+    }
+}
+.aside-user{
+    width: 210px !important;
+    @media (max-width:600px) {
+        width: 100% !important;
+    }
+    .info-aside-img{
+        background: 0;
+    }
+    .interactions{
+        li a{
+            letter-spacing: 1px;
+            display: flex !important;
+            justify-content: center;
+            padding: 0.3em 0.6em 0.375em;
+            border: 2px solid $color-brand !important ;
+            border-radius: 0.375rem !important;
+            margin: 0.1rem 0.125rem !important;
+            font:  14px/normal "lucida grande",tahoma,verdana,arial,sans-serif;
+            color: $color-brand !important;
+            background-color: $color-background-clear !important;
+            box-shadow: 0px 1px 4px $color-brand-shade-dark;
+            transition-duration: .1s;
+            &:hover{
+                background-color: $color-brand-shade-dark !important;
+                color: white !important;
+               
+                box-shadow: 0px 1px 2px $color-brand-shade-dark;
+              }
+        }
+    }
+}
+.profile{
+    .anime-stats{
+        @media (max-width:850px){
+            width: 100%;
+            float: left;
+            margin-right: 0;
+        }
     }
 }

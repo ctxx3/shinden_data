@@ -18,6 +18,8 @@ $color-brand-dark: #383838;
 /*aktywna zakladka menu glownego, nakladki po najechaniu, szukaj w wyszukiwarce*/
 // $color-brand-shade-dark: desaturate(darken($color-brand, 45%),50%);
 $color-brand-shade-dark: #5F1B8C;
+
+$color-brand-on-bg3: initial;
 /**/
 /*linki nowe multimedia*/
 $color-accent: darken($color-brand, 10%);
@@ -74,7 +76,7 @@ $font-base-size: 14;
 $font-base-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 $font-base-lineHeight: 1.5;
 $font-base-spacing: 0.5em;
-$font-base-color: #eceaec;
+$font-base-color: #ccc;
 /*dodatkowe teksty np w ocenie "/10" albo link "dodaj nowy epizod", zobacz wszystkie w profilu, */
 $font-base-highlight: #fff;
 $font-base-lowlight: $color-brand-second;
@@ -85,7 +87,7 @@ $color-background-medium: #222222;
 $color-medium: black;
 $color-medium-accent: #07400a;
 $tagsDefaultColor: $color-background-clear;
-$button-color: #eceaec;
+$button-color: #ccc;
 //UWAGA nie ma wpływu na kolory z pliku _buttons.scss
 $button-bg-color: #680b88;
 $button-radius: 3px;
