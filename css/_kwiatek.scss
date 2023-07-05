@@ -93,7 +93,7 @@
   z-index: 1;
   overflow: visible;
   display: inline-block;
-  padding: 0.3em 0.6em 0.375em;
+  padding: 0.3em 0.5em 0.375em;
   border: 2px solid $color-brand !important;
   border-radius: 0.375rem;
   margin: 0.1rem 0.125rem;
@@ -180,7 +180,7 @@
 }
 
 .search-section ul {
-  padding-top: 7px;
+  padding-top: 20px;
 }
 
 .form-search fieldset input[type=text] {
@@ -226,6 +226,11 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+// .search-form{
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+// }
 .tabs-container{
   
  //to jest do tego gówna pod listą wypunktowane ścierwo ogółem//
