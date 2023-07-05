@@ -157,6 +157,10 @@
     }
 }
 
+.nav-main-sub .nav-list li {
+    border-radius: 0.375rem;
+}
+
 .top-bar--user .main-search {
     .twitter-typeahead {
         margin-right: 0.5rem;
@@ -247,7 +251,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: end;
-    padding: 0.3em 0.6em 0.375em;
+    padding: 0.3em 0.5em 0.375em;
     border: 2px solid $color-brand !important;
     background-color: $color-background-clear !important;
     margin: 0.1rem 0.125rem;
@@ -439,6 +443,9 @@
 
 .title-cover {
     overflow: initial !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     .info-aside-img {
         padding: 0;
@@ -524,6 +531,7 @@
                         justify-content: center;
                         text-decoration: none;
                         height: 100%;
+                        padding: 0 5px;
                     }
                 }
 
@@ -703,7 +711,7 @@
             letter-spacing: 1px;
             display: flex !important;
             justify-content: center;
-            padding: 0.3em 0.6em 0.375em;
+            padding: 0.3em 0.5em 0.375em;
             border: 2px solid $color-brand !important;
             border-radius: 0.375rem !important;
             margin: 0.1rem 0.125rem !important;
@@ -744,7 +752,10 @@
 .col9 {
     float: initial;
     overflow: initial;
-    margin-right: 0;
+    margin-right: auto;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
 }
 
 .push1,
@@ -756,13 +767,17 @@
 .push7,
 .push8,
 .push9 {
-    margin-left: 0;
+    margin-left: auto;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.about-me {
+    display: block;
 }
 
 .section-title {
@@ -774,18 +789,40 @@ form[action="/main/login"] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
 
-form[action="/main/login"] input[type="text"],
-form[action="/main/login"] input[type="password"] {
-    margin-left: 12px;
-    border-radius: 0.375rem;
-    width: 100%;
-    height: 34px;
-    background-color: #212529;
-    box-shadow: none !important;
-    padding: .3em .4em;
-    font-size: 16px;
-    border: 1px solid #495057;
-    color: #ccc;
+    input[type="text"],
+    input[type="password"] {
+        margin-left: 12px;
+        border-radius: 0.375rem;
+        width: 100%;
+        height: 34px;
+        background-color: #212529;
+        box-shadow: none !important;
+        padding: .3em .4em;
+        font-size: 16px;
+        border: 1px solid #495057;
+        color: #ccc;
+    }
+
+    a[href="https://login.shinden.eu"] {
+        i:first-child {
+            filter: invert(46%) sepia(48%) saturate(2358%) hue-rotate(237deg) brightness(101%) contrast(95%);
+        }
+
+        &:hover {
+            i:first-child {
+                filter: invert(87%) sepia(100%) saturate(2%) hue-rotate(247deg) brightness(106%) contrast(101%);
+            }
+        }
+
+    }
+}
+.l-main-contantainer .box.info-messages-box + .push4.col3.box{
+    width:100% !important;
+    max-width: 320px;
+}
+@media (max-width:482px) {
+    .page-anime-episodes .data-view-table-episodes .ep-title {
+        display: none;
+    }
 }
