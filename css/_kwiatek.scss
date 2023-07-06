@@ -229,8 +229,8 @@
 .nav-main-sub .is-active>a {
   color: #ccc;
   background: #5F1B8C;
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
+  border-radius: 0.375rem;
+  
 }
 .title-table .multimedia-col {
   width: 80px;
@@ -239,10 +239,6 @@
 .title-table .rating em {
   font-size: 14px;
   font-style: normal !important;
-}
-
-.info-aside-img {
-  border: solid 2px #B668F9;
 }
 
 .seasons-list a{
@@ -285,4 +281,23 @@
 }
 .data-view-table-full td:first-child{
   width: 104px !important;
+}
+.media-list{
+  max-height: 473px;
+  overflow: auto;
+}
+.info{
+  text-align: center;
+  color: #48A9D7;
+  font-size: 17px;
+  background: transparent;
+}
+.error{
+  color: #FF5353;
+  text-align: center;
+  font-size: 17px;
+  background: transparent;
+}
+.error a{
+  color: $color-brand;
 }
