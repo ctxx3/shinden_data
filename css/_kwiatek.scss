@@ -1,13 +1,8 @@
-.newTitle.newTitle-blue span {
-  //background: $kwiatek-color;
-}
-
 .carousel-slides li {
   float: left;
   position: relative;
   height: 322px;
   max-width: 1000px;
-  //background: #240b36 !important;
 }
 
 .box .box-title {
@@ -16,28 +11,6 @@
   font-family: "Comfortaa", cursive;
   letter-spacing: 1px;
   margin: 10px 0 3px 0;
-  //text-align: center;
-  //background: #270932 !important;
-}
-
-.l-main-contantainer {
-  //background: #17021e !important;
-}
-
-.newTitle span {
-  //background-color: #270932 !important;
-}
-
-.my-row {
-  //background-color: #270932;
-}
-
-.col-xs-12 {
-  //background: #270932 !important;
-}
-
-.box-new-series {
-  //background: #270932;
 }
 
 .search-section button {
@@ -56,19 +29,11 @@
   width: 75% !important;
 }
 
-.creator-form input {
-  //width: 75% !important;
-}
-
 .creator-form select.datepicker,
 .creator-form select,
 .creator-form input,
 .creator-form textarea {
   border-radius: 0.375rem !important;
-}
-
-.navigation {
-  //background: #270932 !important;
 }
 
 .button {
@@ -84,14 +49,11 @@
   text-decoration: none;
   text-align: center;
   font: 14px/normal "lucida grande", tahoma, verdana, arial, sans-serif;
-  //white-space: nowrap;
   cursor: pointer;
   color: $color-brand !important;
   background-color: $color-background-clear !important;
   background-image: none !important;
-  //box-shadow: 0 1px 0 rgba(0,0,0,.1), inset 0 1px 0 ;
   box-shadow: 0px 1px 4px $color-brand-shade-dark;
-  //zoom: 1;
   *display: inline;
   transition-duration: .1s;
 }
@@ -213,13 +175,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-
-
-.tabs-container {
-
-  //to jest do tego gówna pod listą wypunktowane ścierwo ogółem//
 }
 
 .tags li a {
