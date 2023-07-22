@@ -264,3 +264,21 @@
   height: 20px !important;
   border-radius: 0.375rem;
 }
+.media-stats .media-stats-small-number {
+  font-size: 13px;
+}
+.progressbar {
+  height: 15px;
+  border-radius: 0.375rem;
+  width: 100%;
+  max-width: 340px;
+  box-sizing: border-box;
+  @media (max-width:600px) {
+    max-width: 83px;
+  }
+}
+.progressbar-value{
+  border-radius: 0.375rem;
+  height: 100%;
+}
+
