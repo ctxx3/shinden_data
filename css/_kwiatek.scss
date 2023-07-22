@@ -257,7 +257,10 @@
 .info-aside-rating{
   color: $font-base-color !important;
 }
-
 .error a{
   color: $color-brand;
+}
+.progressbar-demographic .progressbar-value {
+  height: 20px !important;
+  border-radius: 0.375rem;
 }
