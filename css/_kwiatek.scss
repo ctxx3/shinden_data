@@ -184,8 +184,9 @@
   color: #ccc;
   background: #5F1B8C;
   border-radius: 0.375rem;
-  
+
 }
+
 .title-table .multimedia-col {
   width: 80px;
 }
@@ -195,7 +196,7 @@
   font-style: normal !important;
 }
 
-.seasons-list a{
+.seasons-list a {
   letter-spacing: 1px;
   border: 2px solid $color-brand !important;
   border-radius: 0.375rem;
@@ -221,58 +222,72 @@
   color: white !important;
   box-shadow: 0px 1px 2px $color-brand-shade-dark;
 }
+
 .recomm-right {
   float: right;
   margin-top: 84px;
   text-align: right;
   top: 75px;
 }
-.season-tile{
+
+.season-tile {
   height: 210px;
 }
-.info-aside-list dt{
+
+.info-aside-list dt {
   width: 46% !important;
 }
-.data-view-table-full td:first-child{
+
+.data-view-table-full td:first-child {
   width: 104px !important;
 }
-.title-coocreate{
-.media-list{
-  max-height: 473px !important;
+
+.title-coocreate {
+  .media-list {
+    max-height: 473px !important;
+  }
 }
-}
-.info{
+
+.info {
   text-align: center;
   color: #48A9D7;
   font-size: 17px;
   background: transparent;
 }
-.error{
+
+.error {
   color: #FF5353;
   text-align: center;
   font-size: 17px;
   background: transparent;
 }
-.info-aside-rating{
+
+.info-aside-rating {
   color: $font-base-color !important;
 }
-.info-aside-rating{
+
+.info-aside-rating {
   color: $font-base-color !important;
 }
-.error a{
+
+.error a {
   color: $color-brand;
 }
+
 .progressbar-demographic {
   border-radius: 0.375rem;
   background-color: #464646;
-.progressbar-value {
-  height: 20px !important;
-  border-radius: 0.375rem !important;
+
+  .progressbar-value {
+    height: 20px !important;
+    border-radius: 0.375rem !important;
+  }
 }
-}
+
 .media-stats .media-stats-small-number {
   font-size: 13px;
 }
+
 .progressbar {
   height: 15px;
   border-radius: 0.375rem;
@@ -281,41 +296,51 @@
   box-sizing: border-box;
   box-shadow: none;
   background-color: #464646;
-  @media (max-width:600px) {
-    max-width: 83px;
-  }
 }
-.progressbar-value{
+
+.progressbar-value {
   border-radius: 0.375rem !important;
   height: 100% !important;
 }
-.progressbar-text{
+
+.progressbar-text {
   font-size: 16px;
   text-shadow: none;
 }
-.active ul a{
+
+.active ul a {
   background-color: #B668F9;
+  border-radius: 0.375rem;
 }
-.user-navigation li.active {
-  color: #ccc;
-}
-.user-navigation li.active ul{
+
+.user-navigation li.active ul {
   background-color: $color-brand-shade-dark;
 }
-.user-navigation{
+
+.user-navigation {
   background-color: #202020;
 }
-.user-navigation li.active{
+
+.user-navigation li.active {
+  background-color: $color-brand-shade-dark;
+  color: #ccc;
+}
+
+.user-navigation li.active a {
   background-color: $color-brand-shade-dark;
 }
-.user-navigation li.active a{
-  background-color: $color-brand-shade-dark;
-}
+
 .user-navigation li li.is-active a {
   background-color: #B668F9;
   color: #ccc;
 }
-.user-navigation li.active ul a:hover{
-  background-color: #B668F9;
+
+.user-navigation li.active ul a:hover {
   color: #ccc;
+  background-color: #340e4e;
+  border-radius: 0.375rem !important;
+}
+.user-navigation li:hover{
+  border-radius: 0.375rem;
+  background-color: #340e4e;
 }
