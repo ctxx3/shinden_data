@@ -39,7 +39,7 @@
   border-radius: 0.375rem !important;
 }
 
-.button {
+.button, .box-more-link {
   letter-spacing: 1px;
   position: relative;
   z-index: 1;
@@ -61,7 +61,7 @@
   transition-duration: .1s;
 }
 
-.button:hover {
+.button:hover, .box-more-link:hover {
   background-color: $color-brand-shade-dark !important;
   color: white !important;
 
