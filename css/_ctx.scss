@@ -831,10 +831,12 @@ form[action="/main/login"] {
 
     }
 }
-.l-main-contantainer .box.info-messages-box + .push4.col3.box{
-    width:100% !important;
+
+.l-main-contantainer .box.info-messages-box+.push4.col3.box {
+    width: 100% !important;
     max-width: 320px;
 }
+
 @media (max-width:482px) {
     .page-anime-episodes .data-view-table-episodes .ep-title {
         display: none;
@@ -842,8 +844,8 @@ form[action="/main/login"] {
 }
 
 
-.ch-st-list{
-    .ch-st-item{
+.ch-st-list {
+    .ch-st-item {
         background-color: #1a1a1a;
         border: 2px solid $color-brand-shade-dark;
         border-radius: 0.375rem;
@@ -856,9 +858,11 @@ form[action="/main/login"] {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .item-l{
+
+        .item-l {
+
             // max-width: initial;
-            img{
+            img {
                 width: initial;
                 height: 100%;
                 margin: 0;
@@ -866,13 +870,16 @@ form[action="/main/login"] {
                 left: 0;
                 top: 0;
             }
-            .p-txt{
+
+            .p-txt {
                 flex-direction: column-reverse;
                 text-align: center;
-                h3{
+
+                h3 {
                     font-size: 18px;
                 }
-                p{
+
+                p {
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -883,7 +890,8 @@ form[action="/main/login"] {
                 }
             }
         }
-        .item-r{
+
+        .item-r {
             // &:hover{
             //     img{
             //         display: block;
@@ -897,39 +905,99 @@ form[action="/main/login"] {
             // }
             min-width: initial;
             position: relative;
-            &:hover{
-                .del-b{
+
+            &:hover {
+                .del-b {
                     display: inline-flex;
                 }
             }
-            
-            img{
+
+            img {
                 display: none;
             }
-            .p-txt{
-                h3{
+
+            .p-txt {
+                h3 {
                     font-size: 16px;
                     font-weight: normal;
-                    a{
+
+                    a {
                         color: $font-base-color;
                     }
                 }
-                p{
+
+                p {
                     display: none;
                 }
             }
         }
-        .del-b{
+
+        .del-b {
             position: absolute;
             left: 100%;
+
             // bottom: 0;
-            a{
+            a {
                 opacity: 1 !important;
             }
+
             display: none;
             align-items: center;
             padding-top: 2px;
         }
     }
 
+}
+
+.person-list {
+    column-gap: 7px;
+    .person-character-item {
+        border: 2px solid $color-brand-shade-dark;
+        border-radius: 0.375rem;
+        background-color: #1a1a1a;
+        position: relative;
+        padding: 0;
+        margin-bottom: 5px;
+        overflow: hidden;
+        display: block;
+        .person{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 90px;
+            .person-character-delete{
+                position: absolute;
+                top: 2px;
+                right: 2px;
+            }
+        }
+        .person-character-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 60%;
+            margin: 5px 0 10px 0;
+            p{
+                text-align: center;
+            }
+        }
+
+        img.character {
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    }
+}
+.box-more-link{
+    padding-right: 0.5em !important;
+    text-decoration: none !important;
+}
+.box-more-link:after{
+    font: normal normal normal 14px/1 FontAwesome;
+    content: " \f0a9";
 }
