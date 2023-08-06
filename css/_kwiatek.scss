@@ -11,6 +11,9 @@
   font-family: "Comfortaa", cursive;
   letter-spacing: 1px;
   margin: 10px 0 3px 0;
+  @media(max-width:600px){
+    text-align: center;
+  }
 }
 
 .search-section button {
@@ -215,6 +218,9 @@
   font-weight: 300;
   margin-bottom: 8px;
   width: 200px;
+  @media(max-width:600px){
+    width: 100%;
+  }
 }
 
 .seasons-list a:hover {
