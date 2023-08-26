@@ -18,12 +18,15 @@
 
 .search-section button {
   height: 28px;
-  border-radius: 5px !important;
-  color: #fff;
-  background: #272727;
+  border-top-right-radius: 0.375rem !important;
+  border-bottom-right-radius: 0.375rem !important;
+  color: #ccc;
+  background: $color-brand-shade-dark;
   border-color: #07010900 !important;
 }
-
+.search-section .input-right{
+  border-radius: 0;
+}
 .creator-form select.datepicker {
   width: 9% !important;
 }
@@ -198,7 +201,15 @@
   font-size: 14px;
   font-style: normal !important;
 }
-
+.title-table .rating-col{
+  width: 140px;
+}
+.title-table .ranking-rate-col{
+  width: 135px;
+}
+.title-table .ranking-col{
+  width: 38px;
+}
 .seasons-list a {
   letter-spacing: 1px;
   border: 2px solid $color-brand !important;
@@ -349,4 +360,12 @@
 .user-navigation li:hover{
   border-radius: 0.375rem;
   background-color: #340e4e;
+}
+h3.close-bar {
+@media (max-width: 600px)
+{
+    display: block;
+    background: #222222;
+    color: #ccc;
+}
 }
