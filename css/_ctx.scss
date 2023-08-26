@@ -137,10 +137,12 @@
         a {
             font-size: 16px;
             text-transform: initial;
+            padding: 4px 6px !important;
         }
     }
 
     &-main {
+        padding: 0 4px;
         @media (max-width:992px) {
             display: none;
         }
@@ -190,11 +192,24 @@
         background: none;
 
         .row {
+            flex-direction: column-reverse;
             .col6 {
                 width: 100%;
-
+                &:last-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    margin-bottom: .5em;
+                    .section-title{
+                        display: initial;
+                        margin-top: 0;
+                        margin-bottom: 1em;
+                    }
+                }
                 .section-title {
                     display: none;
+                    text-align: center;
                 }
 
                 ul {
@@ -210,10 +225,6 @@
                         color: #adb5bdbf;
                     }
                 }
-            }
-
-            .push6 {
-                display: none;
             }
         }
     }
