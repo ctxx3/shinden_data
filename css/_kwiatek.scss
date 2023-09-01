@@ -6,7 +6,7 @@
 }
 
 .box .box-title {
-  border-bottom: 1px solid #383838;
+  border-bottom: 1px solid $color-background-3;
   text-transform: uppercase;
   font-family: "Comfortaa", cursive;
   letter-spacing: 1px;
@@ -20,9 +20,9 @@
   height: 28px;
   border-top-right-radius: 0.375rem !important;
   border-bottom-right-radius: 0.375rem !important;
-  color: #ccc;
+  color: $font-base-color;
   background: $color-brand-shade-dark;
-  border-color: #07010900 !important;
+  border-color: $color-medium !important;
 }
 .search-section .input-right{
   border-radius: 0;
@@ -66,7 +66,7 @@
 
 .button:hover, .box-more-link:hover {
   background-color: $color-brand-shade-dark !important;
-  color: white !important;
+  color: $color-note-text !important;
 
   box-shadow: 0px 1px 2px $color-brand-shade-dark;
 }
@@ -76,19 +76,19 @@
   border-radius: 0.375rem !important;
 
   textarea {
-    color: white;
-    background-color: #383838 !important;
+    color: $color-note-text;
+    background-color: $color-background-3 !important;
 
   }
 }
 
 .buttons {
-  background-color: #222222 !important;
+  background-color: $color-background !important;
 }
 
 .tt-dropdown-menu {
-  background-color: #383838 !important;
-  color: #ccc !important;
+  background-color: $color-background-3 !important;
+  color: $font-base-color !important;
 }
 
 .tabs li {
@@ -148,25 +148,25 @@
   border-bottom-right-radius: 0.375rem;
 
   select {
-    color: #ccc !important;
+    color: $font-base-color !important;
     border-top-left-radius: 0.375rem;
     border-bottom-left-radius: 0.375rem;
     border-right: 0px;
-    background: #222222;
+    background: $color-background;
   }
 
   input[type=submit],
   input {
     border-top-right-radius: 0.375rem;
     border-bottom-right-radius: 0.375rem;
-    color: #ccc;
+    color: $font-base-color;
 
   }
 
 }
 
 .modal-body {
-  background-color: #222222 !important;
+  background-color: $color-background !important;
 }
 
 .tabs {
@@ -187,8 +187,8 @@
 }
 
 .nav-main-sub .is-active>a {
-  color: #ccc;
-  background: #5F1B8C;
+  color: $font-base-color;
+  background: $color-brand-shade-dark;
   border-radius: 0.375rem;
 
 }
@@ -236,7 +236,7 @@
 
 .seasons-list a:hover {
   background-color: $color-brand-shade-dark !important;
-  color: white !important;
+  color: $color-note-text !important;
   box-shadow: 0px 1px 2px $color-brand-shade-dark;
 }
 
@@ -273,7 +273,7 @@
 }
 
 .error {
-  color: #FF5353;
+  color: $color-accent-2;
   text-align: center;
   font-size: 17px;
   background: transparent;
@@ -293,7 +293,7 @@
 
 .progressbar-demographic {
   border-radius: 0.375rem;
-  background-color: #464646;
+  background-color: $input-border-color;
 
   .progressbar-value {
     height: 20px !important;
@@ -312,7 +312,7 @@
   max-width: 340px;
   box-sizing: border-box;
   box-shadow: none;
-  background-color: #464646;
+  background-color: $input-border-color;
 }
 
 .progressbar-value {
@@ -326,7 +326,7 @@
 }
 
 .active ul a {
-  background-color: #B668F9;
+  background-color: $color-brand;
   border-radius: 0.375rem;
 }
 
@@ -335,12 +335,12 @@
 }
 
 .user-navigation {
-  background-color: #202020;
+  background-color: $sub-nav-bg-color;
 }
 
 .user-navigation li.active {
   background-color: $color-brand-shade-dark;
-  color: #ccc;
+  color: $font-base-color;
 }
 
 .user-navigation li.active a {
@@ -348,24 +348,24 @@
 }
 
 .user-navigation li li.is-active a {
-  background-color: #B668F9;
-  color: #ccc;
+  background-color: $color-brand;
+  color: $font-base-color;
 }
 
 .user-navigation li.active ul a:hover {
-  color: #ccc;
-  background-color: #340e4e;
+  color: $font-base-color;
+  background-color: $color-brand-shade-dark;
   border-radius: 0.375rem !important;
 }
 .user-navigation li:hover{
   border-radius: 0.375rem;
-  background-color: #340e4e;
+  background-color: $color-brand-shade-dark;
 }
 h3.close-bar {
 @media (max-width: 600px)
 {
     display: block;
-    background: #222222;
-    color: #ccc;
+    background: $color-background;
+    color: $font-base-color;
 }
 }
